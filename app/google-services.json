@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "990385837469",
+    "firebase_url": "https://weighttracker-eb692.firebaseio.com",
+    "project_id": "weighttracker-eb692",
+    "storage_bucket": "weighttracker-eb692.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:990385837469:android:e3239859ebc00592",
+        "android_client_info": {
+          "package_name": "com.example.ralucaniti.weighttracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "990385837469-lhvbqhng6ofnih2f5s3oad0gaajp4rm7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtEv1FoTeFxGcEjA0xBYlGvsumnrQgnS8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
