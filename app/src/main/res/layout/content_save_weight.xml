@@ -21,10 +21,11 @@
 
     <ListView
         android:id="@+id/storedValues"
-        android:layout_width="31dp"
+        android:layout_width="368dp"
         android:layout_height="495dp"
-        tools:layout_editor_absoluteX="56dp"
         android:layout_marginTop="34dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

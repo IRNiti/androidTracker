@@ -7,6 +7,8 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import java.io.FileInputStream;
@@ -23,11 +25,9 @@ public class SaveWeight extends AppCompatActivity {
         setContentView(R.layout.activity_save_weight);
 
         Intent intent = getIntent();
-     //   int weight = intent.getIntExtra(MainActivity.USER_INPUT, 0);
         String message = intent.getStringExtra(MainActivity.USER_INPUT);
 
         TextView displayText = (TextView) findViewById(R.id.textView);
-      //  displayText.setText(String.valueOf(weight));
         displayText.setText(message);
 
         FileInputStream inputStream;
@@ -50,17 +50,9 @@ public class SaveWeight extends AppCompatActivity {
             e.printStackTrace();
         }
 
-//        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-//        setSupportActionBar(toolbar);
-//
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
+        ArrayAdapter<Integer> itemsAdapter = new ArrayAdapter<Integer>(this, R.layout.list_view_item, values);
+        ListView lv = (ListView) findViewById(R.id.storedValues);
+        lv.setAdapter(itemsAdapter);
     }
 
 }

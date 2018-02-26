@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-
 import java.io.FileOutputStream;
 
 public class MainActivity extends AppCompatActivity {
@@ -28,9 +27,8 @@ public class MainActivity extends AppCompatActivity {
         EditText input = (EditText) findViewById(R.id.editText);
         String weightInput = input.getText().toString();
         String csvInput = weightInput+",";
-     //   int weight = Integer.parseInt(weightInput);
         try {
-            outputStream = openFileOutput(dataStorage, Context.MODE_PRIVATE);
+            outputStream = openFileOutput(dataStorage, Context.MODE_APPEND);
             outputStream.write(csvInput.getBytes());
             outputStream.close();
             message = "Input succesfully saved";
