@@ -14,7 +14,7 @@
         android:layout_height="37dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Weight"
+        android:text=""
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="42dp"
         android:layout_marginLeft="46dp"
